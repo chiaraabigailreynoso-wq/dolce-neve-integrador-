@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto - Dolce Neve</title>
+
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  
+  <header class="sticky-top bg-white shadow-sm">
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid px-0">
+
+        <a class="navbar-brand me-auto" href="index.html">
+          <img src="logox.png" alt="Dolce Neve Logo">
+        </a>
+
+        <button class="navbar-toggler btn-menu-icon"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Abrir menú">
+          <i class="bi bi-list"></i>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-center"
+          id="navbarNav">
+
+          <ul class="navbar-nav">
+
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">INICIO</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="nosotros.html">NOSOTROS</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="sabores.html">SABORES</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">CONTACTO</a>
+            </li>
+
+          </ul>
+        </div>
+
+        <div class="d-none d-lg-flex align-items-center gap-2">
+          <a href="https://wa.me/5492646230093"
+            class="btn-whatsapp"
+            title="WhatsApp"
+            target="_blank">
+            <i class="bi bi-whatsapp"></i>
+          </a>
+        </div>
+
+      </div>
+    </nav>
+  </div>
+</header>
+  
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="menuGustos" aria-labelledby="menuGustosLabel">
+    <div class="offcanvas-header border-bottom">
+      <h5 class="offcanvas-title font-serif text-dn-pink fw-bold mb-0" id="menuGustosLabel">
+        <i class="bi bi-ice-cream me-2"></i>Nuestros Gustos
+      </h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <p class="small text-muted mb-3">Selecciona una categoría para explorar nuestra variedad artesanal:</p>
+
+      <div class="accordion accordion-flush" id="accordionGustos">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#cremasCollapse">
+              <i class="bi bi-heart-fill me-2 text-dn-pink"></i> Cremas Tradicionales
+            </button>
+          </h2>
+          <div id="cremasCollapse" class="accordion-collapse collapse show" data-bs-parent="#accordionGustos">
+            <div class="accordion-body">
+              <ul class="list-group list-group-flush small">
+                <li class="list-group-item d-flex justify-content-between align-items-center bg-transparent px-0"><span>Americana</span><span class="badge bg-light text-muted">Clásico</span></li>
+                <li class="list-group-item d-flex justify-content-between align-items-center bg-transparent px-0"><span>Fruti Cream</span><span class="badge bg-danger-subtle text-danger">Nuevo</span></li>
+                <li class="list-group-item d-flex justify-content-between align-items-center bg-transparent px-0"><span>Nuez Dolce</span><span class="badge bg-light text-muted">Especial</span></li>
+                <li class="list-group-item d-flex justify-content-between align-items-center bg-transparent px-0"><span>Bare Vanilla</span></li>
+                <li class="list-group-item d-flex justify-content-between align-items-center bg-transparent px-0"><span>Menta Granizada</span></li>
+                <li class="list-group-item d-flex justify-content-between align-items-center bg-transparent px-0"><span>Sambayón</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#chocoCollapse">
+              <i class="bi bi-box-seam-fill me-2 text-dn-pink"></i> Chocolates
+            </button>
+          </h2>
+          <div id="chocoCollapse" class="accordion-collapse collapse" data-bs-parent="#accordionGustos">
+            <div class="accordion-body">
+              <ul class="list-group list-group-flush small">
+                <li class="list-group-item d-flex justify-content-between align-items-center bg-transparent px-0"><span>Choco Dolce</span><span class="badge bg-danger-subtle text-danger">Recomendado</span></li>
+                <li class="list-group-item d-flex justify-content-between align-items-center bg-transparent px-0"><span>Chocolate Amargo 70%</span></li>
+                <li class="list-group-item d-flex justify-content-between align-items-center bg-transparent px-0"><span>Chocolate con Almendras</span></li>
+                <li class="list-group-item d-flex justify-content-between align-items-center bg-transparent px-0"><span>Chocolate Blanco Marroc</span></li>
+                <li class="list-group-item d-flex justify-content-between align-items-center bg-transparent px-0"><span>Chocolate Suizo</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#ddlCollapse">
+              <i class="bi bi-star-fill me-2 text-dn-pink"></i> Dulces de Leche
+            </button>
+          </h2>
+          <div id="ddlCollapse" class="accordion-collapse collapse" data-bs-parent="#accordionGustos">
+            <div class="accordion-body">
+              <ul class="list-group list-group-flush small">
+                <li class="list-group-item d-flex justify-content-between align-items-center bg-transparent px-0"><span>Dulce de Leche Tradicional</span></li>
+                <li class="list-group-item d-flex justify-content-between align-items-center bg-transparent px-0"><span>Dulce de Leche Granizado</span><span class="badge bg-light text-muted">Favorito</span></li>
+                <li class="list-group-item d-flex justify-content-between align-items-center bg-transparent px-0"><span>Dulce de Leche Super Dolce (con Nuez)</span></li>
+                <li class="list-group-item d-flex justify-content-between align-items-center bg-transparent px-0"><span>Dulce de Leche con Brownie</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#frutalesCollapse">
+              <i class="bi bi-droplet-fill me-2 text-dn-pink"></i> Frutales al Agua
+            </button>
+          </h2>
+          <div id="frutalesCollapse" class="accordion-collapse collapse" data-bs-parent="#accordionGustos">
+            <div class="accordion-body">
+              <ul class="list-group list-group-flush small">
+                <li class="list-group-item d-flex justify-content-between align-items-center bg-transparent px-0"><span>Limón Natural Sanjuanino</span></li>
+                <li class="list-group-item d-flex justify-content-between align-items-center bg-transparent px-0"><span>Frutilla al Agua</span></li>
+                <li class="list-group-item d-flex justify-content-between align-items-center bg-transparent px-0"><span>Maracuyá Tropical</span></li>
+                <li class="list-group-item d-flex justify-content-between align-items-center bg-transparent px-0"><span>Ananá e Higo</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-4 p-3 bg-pink-section rounded-3 text-center">
+        <p class="small fw-semibold text-dark mb-2">¿Querés volver al inicio?</p>
+        <a href="index.html" class="btn btn-dn-pink w-100 btn-sm">Ir al Inicio</a>
+      </div>
+    </div>
+  </div>
+
+  
+  <section class="py-5 bg-pink-section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="text-center mb-5">
+            <span class="section-subtitle-tag">ESTAMOS EN CONTACTO</span>
+            <h1 class="section-title display-5">Escribinos tus Consultas o Pedidos</h1>
+            <p class="section-desc">¿Tenés alguna duda, querés hacernos un pedido especial o sumarte a nuestro equipo? Completá el formulario.</p>
+          </div>
+
+          <div class="card border-0 shadow-sm p-4 p-md-5 rounded-4 bg-white">
+            <form>
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label for="nombre" class="form-label fw-bold small">Nombre y Apellido</label>
+                  <input type="text" class="form-control" id="nombre" placeholder="Ej. Juan Pérez" required>
+                </div>
+                <div class="col-md-6">
+                  <label for="email" class="form-label fw-bold small">Correo Electrónico</label>
+                  <input type="email" class="form-control" id="email" placeholder="correo@ejemplo.com" required>
+                </div>
+                <div class="col-md-12">
+                  <label for="asunto" class="form-label fw-bold small">Asunto</label>
+                  <input type="text" class="form-control" id="asunto" placeholder="Motivo de tu mensaje">
+                </div>
+                <div class="col-md-12">
+                  <label for="mensaje" class="form-label fw-bold small">Mensaje</label>
+                  <textarea class="form-control" id="mensaje" rows="4" placeholder="Escribí tu mensaje aquí..." required></textarea>
+                </div>
+                <div class="col-md-12 text-center mt-4">
+                  <button type="submit" class="btn btn-dn-pink px-5 py-2">Enviar Mensaje</button>
+                </div>
+              </div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer-custom">
+    <img src="dolcex.png" alt="Dolce Watermark" class="footer-watermark">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <h4 class="footer-title">Dolce Neve</h4>
+          <p class="footer-text">
+            Helados hechos de forma artesanal, con las mejores materias primas del país. Tradición familiar y pasión en cada cucurucho.
+          </p>
+          
+          <div class="footer-info-item">
+            <i class="bi bi-telephone"></i> +54 264 123 4567
+          </div>
+          <div class="footer-info-item">
+            <i class="bi bi-envelope"></i> dolceneve@helados.com
+          </div>
+          <div class="footer-info-item">
+            <i class="bi bi-geo-alt"></i> Av. Ignacio de la Rosa 1235 Oeste, San Juan, Argentina
+          </div>
+
+          <div class="mt-4">
+            <a href="#" class="footer-social-icon"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="footer-social-icon"><i class="bi bi-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="script.js"></script>
+</body>
+</html>

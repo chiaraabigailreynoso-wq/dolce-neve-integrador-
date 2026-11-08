@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dolce Neve - Heladería Artesanal</title>
+   
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+ <header class="sticky-top bg-white shadow-sm">
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid px-0">
+
+        <a class="navbar-brand me-auto" href="index.html">
+          <img src="logox.png" alt="Dolce Neve Logo">
+        </a>
+
+        <button class="navbar-toggler btn-menu-icon"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Abrir menú">
+          <i class="bi bi-list"></i>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-center"
+          id="navbarNav">
+
+          <ul class="navbar-nav">
+
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">INICIO</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="nosotros.html">NOSOTROS</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="sabores.html">SABORES</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">CONTACTO</a>
+            </li>
+
+          </ul>
+        </div>
+
+        <div class="d-none d-lg-flex align-items-center gap-2">
+          <a href="https://wa.me/5492646230093"
+            class="btn-whatsapp"
+            title="WhatsApp"
+            target="_blank">
+            <i class="bi bi-whatsapp"></i>
+          </a>
+        </div>
+
+      </div>
+    </nav>
+  </div>
+</header>
+  
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="menuGustos" aria-labelledby="menuGustosLabel">
+    <div class="offcanvas-header border-bottom">
+      <h5 class="offcanvas-title font-serif text-dn-pink fw-bold mb-0" id="menuGustosLabel">
+        <i class="bi bi-ice-cream me-2"></i>Nuestros Gustos
+      </h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <p class="small text-muted mb-3">Selecciona una categoría para explorar nuestra variedad artesanal:</p>
+
+      <div class="accordion accordion-flush" id="accordionGustos">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#cremasCollapse">
+              <i class="bi bi-heart-fill me-2 text-dn-pink"></i> Cremas Tradicionales
+            </button>
+          </h2>
+          <div id="cremasCollapse" class="accordion-collapse collapse show" data-bs-parent="#accordionGustos">
+            <div class="accordion-body">
+              <ul class="list-group list-group-flush small">
+                <li class="list-group-item d-flex justify-content-between align-items-center bg-transparent px-0">
+                  <span>Americana</span>
+                  <span class="badge bg-light text-muted">Clásico</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center bg-transparent px-0">
+                  <span>Fruti Cream</span>
+                  <span class="badge bg-danger-subtle text-danger">Nuevo</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center bg-transparent px-0">
+                  <span>Nuez Dolce</span>
+                  <span class="badge bg-light text-muted">Especial</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center bg-transparent px-0">
+                  <span>Bare Vanilla</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center bg-transparent px-0">
+                  <span>Menta Granizada</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center bg-transparent px-0">
+                  <span>Sambayón</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#chocoCollapse">
+              <i class="bi bi-box-seam-fill me-2 text-dn-pink"></i> Chocolates
+            </button>
+          </h2>
+          <div id="chocoCollapse" class="accordion-collapse collapse" data-bs-parent="#accordionGustos">
+            <div class="accordion-body">
+              <ul class="list-group list-group-flush small">
+                <li class="list-group-item d-flex justify-content-between align-items-center bg-transparent px-0">
+                  <span>Choco Dolce</span>
+                  <span class="badge bg-danger-subtle text-danger">Recomendado</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center bg-transparent px-0">
+                  <span>Chocolate Amargo 70%</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center bg-transparent px-0">
+                  <span>Chocolate con Almendras</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center bg-transparent px-0">
+                  <span>Chocolate Blanco Marroc</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center bg-transparent px-0">
+                  <span>Chocolate Suizo</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#ddlCollapse">
+              <i class="bi bi-star-fill me-2 text-dn-pink"></i> Dulces de Leche
+            </button>
+          </h2>
+          <div id="ddlCollapse" class="accordion-collapse collapse" data-bs-parent="#accordionGustos">
+            <div class="accordion-body">
+              <ul class="list-group list-group-flush small">
+                <li class="list-group-item d-flex justify-content-between align-items-center bg-transparent px-0">
+                  <span>Dulce de Leche Tradicional</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center bg-transparent px-0">
+                  <span>Dulce de Leche Granizado</span>
+                  <span class="badge bg-light text-muted">Favorito</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center bg-transparent px-0">
+                  <span>Dulce de Leche Super Dolce (con Nuez)</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center bg-transparent px-0">
+                  <span>Dulce de Leche con Brownie</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#frutalesCollapse">
+              <i class="bi bi-droplet-fill me-2 text-dn-pink"></i> Frutales al Agua
+            </button>
+          </h2>
+          <div id="frutalesCollapse" class="accordion-collapse collapse" data-bs-parent="#accordionGustos">
+            <div class="accordion-body">
+              <ul class="list-group list-group-flush small">
+                <li class="list-group-item d-flex justify-content-between align-items-center bg-transparent px-0">
+                  <span>Limón Natural Sanjuanino</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center bg-transparent px-0">
+                  <span>Frutilla al Agua</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center bg-transparent px-0">
+                  <span>Maracuyá Tropical</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center bg-transparent px-0">
+                  <span>Ananá e Higo</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-4 p-3 bg-pink-section rounded-3 text-center">
+        <p class="small fw-semibold text-dark mb-2">¿Querés pedir tus sabores favoritos?</p>
+        <a href="contacto.html" class="btn btn-dn-pink w-100 btn-sm">Hacer Pedido Online</a>
+      </div>
+    </div>
+  </div>
+
+  <section class="hero-section">
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="hero-slide" style="background-image: url(head.png);">
+            <div class="hero-overlay"></div>
+            <div class="container h-100">
+              <div class="row align-items-center h-100">
+                <div class="col-lg-6">
+                  <div class="hero-content">
+                    <span class="hero-badge">HELADERÍA ARTESANAL</span>
+                    <h1 class="hero-title">Sabores que enamoran</h1>
+                    <p class="hero-text">
+                      Helados artesanales elaborados con recetas tradicionales desde 2015. Ingredientes seleccionados especialmente para crear momentos inolvidables.
+                    </p>
+                    <a href="sabores.html" class="btn btn-dn-pink">
+                      Ver Sabores <i class="bi bi-chevron-right ms-1"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="carousel-item">
+          <div class="hero-slide" style="background-image: url('historia.png');">
+            <div class="hero-overlay"></div>
+            <div class="container h-100">
+              <div class="row align-items-center h-100">
+                <div class="col-lg-6">
+                  <div class="hero-content">
+                    <span class="hero-badge">TRADICIÓN E INNOVACIÓN</span>
+                    <h1 class="hero-title">Nuestra Pasión Artesanal</h1>
+                    <p class="hero-text">
+                      Cada sabor es preparado minuciosamente para brindarte la mejor experiencia heladera en San Juan.
+                    </p>
+                    <a href="#historia" class="btn btn-dn-pink">
+                      Conoce Más <i class="bi bi-chevron-right ms-1"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+  </section>
+  
+  <section id="novedades" class="bg-pink-section">
+    <div class="container">
+      <div class="mb-4">
+        <span class="section-subtitle-tag">NOVEDADES</span>
+        <h2 class="section-title">Nuevos Sabores</h2>
+        <p class="section-desc">
+          Creados con recetas tradicionales italianas y un toque único argentino.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card-sabor">
+            <div class="card-sabor-img-wrapper">
+              <img src="fruti.png" alt="Fruti Cream">
+            </div>
+            <div class="card-sabor-body">
+              <h3 class="card-sabor-title">Fruti Cream</h3>
+              <p class="card-sabor-text">
+                Fresas naturales de huertos seleccionadas combinadas con nuestra crema artesanal.
+              </p>
+              <a href="sabores.html" class="link-explorar">
+                Explorar variedad <i class="bi bi-chevron-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card-sabor">
+            <div class="card-sabor-img-wrapper">
+              <img src="choco.png" alt="Choco Dolce">
+            </div>
+            <div class="card-sabor-body">
+              <h3 class="card-sabor-title">Choco Dolce</h3>
+              <p class="card-sabor-text">
+                Intensidad premium con cacao de origen, hilos de dulce de leche y trozos de chocolate amargo.
+              </p>
+              <a href="sabores.html" class="link-explorar">
+                Explorar variedad <i class="bi bi-chevron-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card-sabor">
+            <div class="card-sabor-img-wrapper">
+              <img src="nuez.png" alt="Nuez Dolce">
+            </div>
+            <div class="card-sabor-body">
+              <h3 class="card-sabor-title">Nuez Dolce</h3>
+              <p class="card-sabor-text">
+                Base de crema tostada con nueces garrapiñadas a mano.
+              </p>
+              <a href="sabores.html" class="link-explorar">
+                Explorar variedad <i class="bi bi-chevron-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="filter-pills">
+        <button class="btn btn-pill-custom">Helados al Agua</button>
+        <button class="btn btn-pill-custom">Palitos Helados</button>
+        <button class="btn btn-pill-custom active">Helados a la Crema</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="historia" class="history-section">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-6">
+          <span class="section-subtitle-tag">DESDE SAN JUAN AL PAÍS</span>
+          <h2 class="section-title">Nuestra Historia</h2>
+          <p class="section-desc mb-3">
+            Detrás de cada sabor hay una historia, una familia y una pasión por los helados.
+          </p>
+          <p class="section-desc mb-3">
+            Comenzamos como un pequeño local, con la idea simple de rescatar las recetas tradicionales del gelato italiano e incorporar los ingredientes frescos y el toque característico de nuestra región argentina.
+          </p>
+          <p class="section-desc mb-4">
+            Cada helado artesanal elaborado pasa por nuestras manos. Sin conservantes ni colorantes artificiales; únicamente ingredientes puros para compartir.
+          </p>
+          <a href="nosotros.html" class="btn-outline-dn">
+            Conócenos más
+          </a>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="row g-2 align-items-center">
+            <div class="col-9">
+              <img src="historia.png" alt="Local Historia Dolce Neve" class="history-img-main">
+            </div>
+            <div class="col-3 d-flex flex-column gap-2">
+              <img src="helado verde.jpg" alt="Proceso 1" class="history-img-thumb">
+              <img src="yogurt.jpg" alt="Proceso 2" class="history-img-thumb">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="sabores" class="bg-pink-section">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-end mb-4">
+        <div>
+          <span class="section-subtitle-tag">LOS MEJORES MOMENTOS</span>
+          <h2 class="section-title mb-0">Promos Dolce</h2>
+<p class="section-desc mb-0 mt-1">Cualquier excusa es buena para un helado. Aprovechá nuestras ofertas especiales</p>
+</div>
+<div class="d-flex gap-1">
+  <button class="btn-circle-nav"><i class="bi bi-chevron-left"></i></button>
+  <button class="btn-circle-nav"><i class="bi bi-chevron-right"></i></button>
+</div>
+</div>
+
+<div class="row g-4">
+  <div class="col-md-4">
+    <div class="card-promo" onclick="window.location.href='contacto.html'" style="cursor: pointer;">
+      <span class="promo-badge">LUNES Y MARTES</span>
+      <img src="vaso.png" alt="Promo 2x1" class="card-promo-img">
+      <div class="promo-val">2x1</div>
+      <p class="promo-desc">En vasitos seleccionados.</p>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="card-promo" onclick="window.location.href='contacto.html'" style="cursor: pointer;">
+      <span class="promo-badge">MIÉRCOLES ESPECIAL</span>
+      <img src="lic.png" alt="Promo 50% OFF" class="card-promo-img">
+      <div class="promo-val">50% OFF</div>
+      <p class="promo-desc">En todos los smoothies.</p>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="card-promo" onclick="window.location.href='contacto.html'" style="cursor: pointer;">
+      <span class="promo-badge">TODOS LOS JUEVES</span>
+      <img src="cono.png" alt="Promo 3x2" class="card-promo-img">
+      <div class="promo-val">3x2</div>
+      <p class="promo-desc">En palitos helados frutales y de crema.</p>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+
+  <section class="delivery-section">
+    <div class="container">
+      <span class="delivery-badge">¡DIRECTO A TU CASA!</span>
+      <h3 class="section-title my-2">Hacé tu pedido fácil y rápido</h3>
+      <p class="section-desc mb-4">Elegí la plataforma de tu preferencia y disfrutá Dolce Neve en minutos.</p>
+      
+      <div class="d-flex justify-content-center align-items-center gap-4 flex-wrap">
+        <div class="delivery-logo-item">
+          <span class="dot-rappi"></span> Rappi
+        </div>
+        <div class="delivery-logo-item">
+          <span class="dot-pedidos"></span> pedidosya
+        </div>
+        <div class="delivery-logo-item">
+          <span class="dot-glovo"></span> Glovo
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="community-banner" style="background-image: url('comunidad.png');">
+    <div class="community-overlay"></div>
+    <div class="container community-content">
+      <span class="text-uppercase fw-bold text-white-50 small tracking-wider">COMUNIDAD DOLCE</span>
+      <h2 class="display-6 fw-bold my-2 font-serif">¿Ya sos parte de nuestra comunidad?</h2>
+      <p class="small text-white-50 max-w-lg mx-auto mb-3">
+        Compartí tu momento Dolce Neve con nosotros. Subí tu historia, etiquetanos y llevate sorpresas semanales.
+      </p>
+      <div class="d-flex justify-content-center gap-2 mb-3">
+        <a href="#" class="btn btn-sm btn-outline-light rounded-pill px-3" style="font-size: 0.75rem;">Etiquetanos en tus Stories</a>
+        <a href="#" class="btn btn-sm btn-outline-light rounded-pill px-3" style="font-size: 0.75rem;">Usá el Hashtag #DolceLovers</a>
+      </div>
+      <div class="d-flex justify-content-center gap-2">
+        <a href="#" class="btn-circle-nav bg-white text-dark"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="btn-circle-nav bg-white text-dark"><i class="bi bi-facebook"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer-custom">
+    <img src="dolcex.png" alt="Dolce Watermark" class="footer-watermark">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <h4 class="footer-title">Dolce Neve</h4>
+          <p class="footer-text">
+            Helados hechos de forma artesanal, con las mejores materias primas del país. Tradición familiar y pasión en cada cucurucho.
+          </p>
+          
+          <div class="footer-info-item">
+            <i class="bi bi-telephone"></i> +54 264 123 4567
+          </div>
+          <div class="footer-info-item">
+            <i class="bi bi-envelope"></i> dolceneve@helados.com
+          </div>
+          <div class="footer-info-item">
+            <i class="bi bi-geo-alt"></i> Av. Ignacio de la Rosa 1235 Oeste, San Juan, Argentina
+          </div>
+
+          <div class="mt-4">
+            <a href="#" class="footer-social-icon"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="footer-social-icon"><i class="bi bi-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

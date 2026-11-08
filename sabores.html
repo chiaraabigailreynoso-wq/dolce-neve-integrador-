@@ -1,0 +1,316 @@
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sabores - Dolce Neve</title>
+
+  <link rel="icon" type="image/png" href="logox.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header class="sticky-top bg-white shadow-sm">
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid px-0">
+
+        <a class="navbar-brand me-auto" href="index.html">
+          <img src="logox.png" alt="Dolce Neve Logo">
+        </a>
+
+        <button class="navbar-toggler btn-menu-icon" type="button"
+          data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false"
+          aria-label="Abrir menú">
+          <i class="bi bi-list"></i>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">INICIO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="nosotros.html">NOSOTROS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="sabores.html">SABORES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">CONTACTO</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="d-none d-lg-flex align-items-center gap-2">
+          <a href="https://wa.me/5492646230093"
+             class="btn-whatsapp" title="WhatsApp" target="_blank">
+            <i class="bi bi-whatsapp"></i>
+          </a>
+        </div>
+
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="py-5 bg-pink-section">
+    <div class="container">
+
+      <div class="text-center mb-5">
+        <span class="section-subtitle-tag">UN POCO DE DULZURA</span>
+        <h1 class="section-title display-5">Sabores Dolce Neve</h1>
+        <p class="section-desc">
+          Descubrí algunos de nuestros sabores y productos artesanales.
+        </p>
+      </div>
+
+      <div class="row g-4">
+
+        
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+            <img src="pistachox.jpg" class="card-img-top" alt="Pistacho Dolce">
+            <div class="card-body text-center">
+              <h2 class="h5">Pistacho Dolce</h2>
+              <p class="section-desc">Pistacho a la crema.</p>
+              <button class="btn btn-dn-pink" data-bs-toggle="modal" data-bs-target="#modalPistacho">
+                Ver imagen
+              </button>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+            <img src="oreo.jpg" class="card-img-top" alt="Oreo Dolce">
+            <div class="card-body text-center">
+              <h2 class="h5">Oreo Dolce</h2>
+              <p class="section-desc">Una opción intensa para amantes de las oreos.</p>
+              <button class="btn btn-dn-pink" data-bs-toggle="modal" data-bs-target="#modalOreo">
+                Ver imagen
+              </button>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+            <img src="tiramisu.jpg" class="card-img-top" alt="Tiramisu Dolce">
+            <div class="card-body text-center">
+              <h2 class="h5">Tiramisu Dolce</h2>
+              <p class="section-desc">Tiramisu tostado con nueces.</p>
+              <button class="btn btn-dn-pink" data-bs-toggle="modal" data-bs-target="#modalTiramisu">
+                Ver imagen
+              </button>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+            <img src="paraiso.jpg" class="card-img-top" alt="Paraíso Dolce">
+            <div class="card-body text-center">
+              <h2 class="h5">Paraíso</h2>
+              <p class="section-desc">Vainilla con glaseado de chocolate y crema Chantilly.</p>
+              <button class="btn btn-dn-pink" data-bs-toggle="modal" data-bs-target="#modalParaiso">
+                Ver imagen
+              </button>
+            </div>
+          </div>
+        </div>
+
+       
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+            <img src="kinder.jpg" class="card-img-top" alt="Kinder">
+            <div class="card-body text-center">
+              <h2 class="h5">Kinder Dolce</h2>
+              <p class="section-desc">Un delicioso sabor inspirado en el chocolate Kinder.</p>
+              <button class="btn btn-dn-pink" data-bs-toggle="modal" data-bs-target="#modalKinder">
+                Ver imagen
+              </button>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+            <img src="americana.jpg" class="card-img-top" alt="Americana">
+            <div class="card-body text-center">
+              <h2 class="h5">Americana Dolce</h2>
+              <p class="section-desc">Helado de americana con galletitas Bailey de Vainilla.</p>
+              <button class="btn btn-dn-pink" data-bs-toggle="modal" data-bs-target="#modalAmericana">
+                Ver imagen
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="text-center mt-5">
+        <a href="contacto.html" class="btn btn-dn-pink">
+          Hacé tu pedido
+          <i class="bi bi-arrow-right"></i>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+
+
+<div class="modal fade" id="modalPistacho" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content border-0 rounded-4 overflow-hidden">
+      <div class="modal-header">
+        <h5 class="modal-title">Pistacho Dolce</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body p-0">
+        <img src="pistachox.jpg" class="img-fluid w-100" alt="Pistacho Dolce">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalOreo" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content border-0 rounded-4 overflow-hidden">
+      <div class="modal-header">
+        <h5 class="modal-title">Oreo Dolce</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body p-0">
+        <img src="oreo.jpg" class="img-fluid w-100" alt="Oreo Dolce">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalTiramisu" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content border-0 rounded-4 overflow-hidden">
+      <div class="modal-header">
+        <h5 class="modal-title">Tiramisu Dolce</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body p-0">
+        <img src="tiramisu.jpg" class="img-fluid w-100" alt="Tiramisu Dolce">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalParaiso" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content border-0 rounded-4 overflow-hidden">
+      <div class="modal-header">
+        <h5 class="modal-title">Paraíso</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body p-0">
+        <img src="paraiso.jpg" class="img-fluid w-100" alt="Paraíso">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalKinder" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content border-0 rounded-4 overflow-hidden">
+      <div class="modal-header">
+        <h5 class="modal-title">Kinder</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body p-0">
+        <img src="kinder.jpg" class="img-fluid w-100" alt="Kinder">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalAmericana" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content border-0 rounded-4 overflow-hidden">
+      <div class="modal-header">
+        <h5 class="modal-title">Americana</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body p-0">
+        <img src="americana.jpg" class="img-fluid w-100" alt="Americana">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<footer class="footer-custom">
+  <img src="dolcex.png" alt="Dolce Watermark" class="footer-watermark">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+
+        <h4 class="footer-title">Dolce Neve</h4>
+
+        <p class="footer-text">
+          Helados hechos de forma artesanal, con las mejores
+          materias primas del país. Tradición familiar y
+          pasión en cada cucurucho.
+        </p>
+
+        <div class="footer-info-item">
+          <i class="bi bi-telephone"></i> +54 264 623 0093
+        </div>
+
+        <div class="footer-info-item">
+          <i class="bi bi-envelope"></i> dolceneve@helados.com
+        </div>
+
+        <div class="footer-info-item">
+          <i class="bi bi-geo-alt"></i>
+          Av. Ignacio de la Rosa 1235 Oeste, San Juan, Argentina
+        </div>
+
+        <div class="mt-4">
+          <a href="#" class="footer-social-icon">
+            <i class="bi bi-facebook"></i>
+          </a>
+          <a href="#" class="footer-social-icon">
+            <i class="bi bi-instagram"></i>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
+
